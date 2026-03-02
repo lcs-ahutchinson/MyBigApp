@@ -9,7 +9,20 @@ import SwiftUI
     
 struct ContentView: View {
     var body: some View {
-        
+        VStack{
+            HStack{
+                
+                Rectangle()
+                    .frame(width:20, height: 20)
+                Text("Back")
+                Spacer()
+                Text("Home")
+                    .padding()
+            }
+            Text("Select Water Type")
+                .fontWeight(.bold)
+                
+        }
         NavigationStack {
             
             VStack (spacing: 110 ){
