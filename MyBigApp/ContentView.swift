@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        
         NavigationStack {
          VStack{
                 waterTypeView(waterType: "Clear", subtitle: "subtitle")
@@ -34,6 +35,13 @@ struct waterTypeView: View{
     
     
     var body: some View{
-        Text(waterType).fontWeight(.bold)
-        Text(subtitle).fontWeight(.ultraLight)}}
-   
+        HStack{ Rectangle()
+                .frame(width:75, height: 75)
+            VStack{ Text(waterType).fontWeight(.bold)
+                Text(subtitle).fontWeight(.ultraLight)}}}
+}
+
+
+// image size
+//Rectangle()
+//    .frame(width:100, height: 100)
