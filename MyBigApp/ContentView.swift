@@ -6,19 +6,22 @@
 //
 
 import SwiftUI
-
+    
 struct ContentView: View {
     var body: some View {
         
         NavigationStack {
-         VStack{
+            
+            VStack (spacing: 110 ){
                 waterTypeView(waterType: "Clear", subtitle: "subtitle")
-                     Spacer()
+                    
+             
                 waterTypeView(waterType: "Murky", subtitle: "subtitle")
-                     Spacer()
+                
                 waterTypeView(waterType: "Stained", subtitle: "subtitle")
             }
         }
+        .padding()
         .padding()
     }
 }
@@ -35,10 +38,21 @@ struct waterTypeView: View{
     
     
     var body: some View{
+        //Image
         HStack{ Rectangle()
                 .frame(width:75, height: 75)
+// water colour
             VStack{ Text(waterType).fontWeight(.bold)
-                Text(subtitle).fontWeight(.ultraLight)}}}
+                Text(subtitle).fontWeight(.ultraLight)}
+          Spacer()
+            Spacer()
+            Spacer()
+            
+           
+            //Chevron
+            Rectangle()
+                .frame(width:20, height: 20)}}
+        
 }
 
 
