@@ -10,9 +10,11 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationStack {
-            List{
+         VStack{
                 waterTypeView(waterType: "Clear", subtitle: "subtitle")
+                     Spacer()
                 waterTypeView(waterType: "Murky", subtitle: "subtitle")
+                     Spacer()
                 waterTypeView(waterType: "Stained", subtitle: "subtitle")
             }
         }
@@ -33,4 +35,5 @@ struct waterTypeView: View{
     
     var body: some View{
         Text(waterType).fontWeight(.bold)
-        Text(subtitle)}}
+        Text(subtitle).fontWeight(.ultraLight)}}
+   
