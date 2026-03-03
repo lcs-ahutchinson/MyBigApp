@@ -11,40 +11,58 @@ struct Day2view: View {
     var body: some View {
         VStack {
             
-           
-            Text("Home")
-                .fontWeight(.heavy)
+            HStack{
                 
-              
+                Image(systemName: "chevron.left")
+                Text("Back")
+                Spacer()
+                
+                Text("Home")
+                    .fontWeight(.heavy)
+                    .padding()
+                
+                
+              Spacer()
+                Spacer()
+            }
+            
             Text("Press to open lure picker")
                 .fontWeight(.medium)
-             
+                .padding()
             Text("Click to learn")
                 .fontWeight(.bold)
-            HStack{
-                lureTab(Title: "Topwater")
-                lureTab(Title: "Crank/Jerkbaits")
+            Spacer()
+            Spacer()
+            VStack{
                 
-                
-                
-                
-                
+                HStack{
+                    lureTab(Title: "Topwater")
+                    lureTab(Title: "Crank/Jerkbaits")
+                }
+                HStack{
+                    lureTab(Title: "Rooster Tails")
+                    lureTab(Title: "Soft Plastics")
+                }
+                HStack{
+                    lureTab(Title: "Spoons")
+                    lureTab(Title: "Spinner baits")
+                    
+                }
+                Spacer()
                 
             }
             
+          
+           
+                }
+            }
+                    }
+                
             
             
             
-            
-            
-            
-            
-            
-            
-            
-        }
-    }
-}
+    
+
 
 
 struct lureTab: View{
@@ -60,7 +78,7 @@ struct lureTab: View{
             VStack{ Text(Title).fontWeight(.bold)
            //image
                 Rectangle()
-                .frame(width:120, height: 90)
+                .frame(width:140, height: 90)
            
                 
                 
