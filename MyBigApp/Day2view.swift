@@ -18,14 +18,14 @@ struct Day2view: View {
                 Spacer()
                 
                 Text("Home")
-                    .fontWeight(.heavy)
+
                     .padding()
                 
                 
               Spacer()
                 Spacer()
             }
-            
+         
             Text("Press to open lure picker")
                 .fontWeight(.medium)
                 .padding()
@@ -77,7 +77,7 @@ struct lureTab: View{
             //Title
             VStack{ Text(Title).fontWeight(.bold)
            //image
-                Rectangle()
+                RoundedRectangle(cornerRadius: 20)
                 .frame(width:140, height: 90)
            
                 

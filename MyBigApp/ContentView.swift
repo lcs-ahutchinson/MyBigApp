@@ -12,8 +12,7 @@ struct ContentView: View {
         VStack{
             HStack{
                 
-                Rectangle()
-                    .frame(width:20, height: 20)
+                Image(systemName: "chevron.left")
                 Text("Back")
                 Spacer()
                 Text("Home")
@@ -52,7 +51,8 @@ struct waterTypeView: View{
     
     var body: some View{
         //Image
-        HStack{ Rectangle()
+        HStack{
+            RoundedRectangle(cornerRadius: 20)
                 .frame(width:75, height: 75)
 // water colour
             VStack{ Text(waterType).fontWeight(.bold)
@@ -63,8 +63,7 @@ struct waterTypeView: View{
             
            
             //Chevron
-            Rectangle()
-                .frame(width:20, height: 20)}}
+            Image(systemName: "chevron.right")}}
         
 }
 
