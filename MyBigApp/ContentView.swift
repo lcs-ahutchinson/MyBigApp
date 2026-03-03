@@ -72,3 +72,29 @@ struct waterTypeView: View{
 // image size
 //Rectangle()
 //    .frame(width:100, height: 100)
+
+//Image(systemName: "heart.fill")
+
+
+//import SwiftUI
+//
+//struct ContentView: View {
+//    var body: some View {
+//        NavigationStack { // or NavigationSplitView
+//            // Your main list or content goes here
+//            ListView()
+//        }
+//    }
+//}
+
+
+
+//struct ListView: View {
+//    var body: some View {
+//        List {
+//            // ... list items
+//        }
+//        .navigationTitle("Landmarks") // Sets the title of the navigation bar
+//    }
+//}
+
